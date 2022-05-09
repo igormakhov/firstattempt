@@ -1,0 +1,5 @@
+predlozh = input("Введи длинную строку с пробелами, ну пожалуйста ")
+print(predlozh.replace(' ', '-'))
+predlozh_2 = input("Ищщо одну, по братски, тож с пробелами ")
+predlozh_polufabrikat = (predlozh_2.split(" "))
+print(f"{'-'.join(predlozh_polufabrikat)}")

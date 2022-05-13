@@ -5,6 +5,7 @@ polozh = 0
 otritsalovo = 0
 nol = 0
 
+
 if first == 0:
     nol = nol + 1
 else:

@@ -9,3 +9,7 @@ for n in range(0,dlina_spiska):
     item = spisok_1[n]
     slovar[item] = spisok_1.count(item)
 print(slovar)
+
+text = input('вводи')
+counter = {symbol: text.count(symbol) for symbol in text}
+print(counter)

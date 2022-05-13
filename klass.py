@@ -13,13 +13,14 @@
 #     print("Херня")
 #     print("Совсем правда" if slovo == slovo[::-1] else "Совсем неправда")
 
-text = input().replace(' ','')
+text = input().lower().replace(' ','')
 glasnye = ("a", "e", "u", "i", "o")
 obshee = len(text)
 glas = 0
 for i in range(0, obshee):
-    if text[i] in glasnye:
-        glas = glas + 1
+    if text[i].isalpha():# проверить чтобы убирало не буквы!!!!!!!!!!!!!!!!!!!
+        if text[i] in glasnye:
+            glas = glas + 1
 neglasnye = obshee - glas
 print('Гласных', glas)
 print('Негласных', neglasnye)

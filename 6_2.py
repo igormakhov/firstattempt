@@ -3,9 +3,11 @@ tablitsa_kodov = {'a': '.-', 'b': '-...', 'c': '-.-.', 'd': '-..', 'e': '.', 'f'
                   'q': '--.-', 'r': '.-.', 's': '...', 't': '-', 'u': '..-', 'v': '...-', 'w': '.--', 'x': '-..-',
                   'y': '-.--', 'z': '--..', '0': '-----', '1': '.----', '2': '..---', '3': '...--', '4': '....-',
                   '5': '.....', '6': '-....', '7': '--...', '8': '---..', '9': '----.'}
-text = list(input('введи текст для перевода на английском '))
-print(text)
-perevod = []
-for i in text:
-    perevod.append(tablitsa_kodov.get(i))
-print(perevod)
+def perevod(text_1):
+    print(text_1)
+    perevod = []
+    for i in text_1:
+        perevod.append(tablitsa_kodov.get(i))#вставить проверку на пробелы и символы
+    print(perevod)
+
+perevod(input('введи текст на английском '))

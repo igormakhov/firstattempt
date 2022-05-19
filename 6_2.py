@@ -9,4 +9,4 @@ def perevod(text_1):
         perevod_1.append(tablitsa_kodov.get(i))#убрать пробелы и символы - сделать проверку
     print(perevod_1)
 
-perevod(input('введи текст на английском '))
+perevod(input('введи текст на английском ').lower())

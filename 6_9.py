@@ -3,13 +3,12 @@ slovar = {'Uasya': {'Imya': 'Vasya', 'Familiya': 'Petrov', 'E-mail': 'pes@kot.ru
           'Lena': {'Imya': 'Elena', 'Familiya': 'Vasina', 'E-mail': 'len@los.ru'},
           'Zhanna': {'Imya': 'Snezhanna', 'Familiya': 'Petina'},
           'Olezha': {'Imya': 'Oleg', 'Familiya': 'Uzki', 'E-mail': 'poleg@zab.ru'}}
-a = slovar.keys()
-for i in a:
-    slovar_1 = slovar[i]
-    c = slovar_1.get('E-mail')
-    if c is None or len(c) == 0:
-        print(i)
+def proverka_myla(spisok):
+    a = slovar.keys()
+    for i in a:
+        slovar_1 = slovar[i]
+        c = slovar_1.get('E-mail')
+        if c is None or len(c) == 0:
+            print(i)
 
-
-
-
+proverka_myla(slovar)

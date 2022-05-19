@@ -6,7 +6,8 @@ tablitsa_kodov = {'a': '.-', 'b': '-...', 'c': '-.-.', 'd': '-..', 'e': '.', 'f'
 def perevod(text_1):
     perevod_1 = []
     for i in text_1:
-        perevod_1.append(tablitsa_kodov.get(i))#убрать пробелы и символы - сделать проверку
+        if not tablitsa_kodov.get(i) is None:
+            perevod_1.append(tablitsa_kodov.get(i))
     print(perevod_1)
 
 perevod(input('введи текст на английском ').lower())

@@ -11,7 +11,12 @@ def spinning_rings(inner_max, outer_max):
     i = inner_list[1]
     j = outer_list[0]
     print(i, j)
-    while i == j:
-
+    a = i
+    b = j
+    while a == b:
+        # i = i + 1
+        # j = j + 1
+        # a = inner_list[i]
+        # b = outer_list[j]
     print(i, j)
 spinning_rings(5, 7)

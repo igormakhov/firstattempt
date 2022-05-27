@@ -11,20 +11,13 @@ for s in range (0, len(text)):
                         continue
                 else:
                         spisok.remove(i)
-        # print(stroka)
-        # print(spisok)
         nov_spisok = f"{''.join(spisok)}"
-        # print(nov_spisok)
         sam_nov_spisok = nov_spisok.split()
-        # print(sam_nov_spisok)
-        dlina_nov = len(sam_nov_spisok)
-        for a in range(0, dlina_nov):
+        for a in range(0, len(sam_nov_spisok)):
                 if len(sam_nov_spisok[a]) > 2:
                         mega_nov_spisok.append(sam_nov_spisok[a])
-        # print(mega_nov_spisok)
-mega_dlina = len(mega_nov_spisok)
 slovar = {}
-for u in range(0, mega_dlina):
+for u in range(0, len(mega_nov_spisok)):
         z = mega_nov_spisok[u]
         d = mega_nov_spisok.count(z)
         slovar[z] = d

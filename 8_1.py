@@ -19,7 +19,7 @@ for s in range (0, len(text)):
 slovar = {}
 for u in range(0, len(mega_nov_spisok)):
         z = mega_nov_spisok[u]
-        d = mega_nov_spisok.count(z)
+        d = [mega_nov_spisok.count(z)]
         slovar[z] = d
 print(slovar)
 
